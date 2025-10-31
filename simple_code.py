@@ -18,7 +18,7 @@ team_tyrosine = [
     {
         "name": "Christopher A",
         "slack_username": "Chris123",
-        "country": "Austria",
+        "country": "Nigeria",
         "hobby": "football",
         "affiliation": "Hackbio Intern",
         "fave_gene": "TAA"
