@@ -1,3 +1,22 @@
+# Define a function to display information about team members
+def display_team_info(team_members):
+    """
+    Prints formatted information about each team member.
+    
+    Parameters:
+        team_members (list): A list of dictionaries containing member details.
+    """
+    for member in team_members:
+        print(
+            f"Name: {member['name']}, "
+            f"Username: {member['slack_username']}, "
+            f"Country: {member['country']}, "
+            f"Hobby: {member['hobby']}, "
+            f"Affiliation: {member['affiliation']}, "
+            f"Favourite gene: {member['fave_gene']}"
+        )
+
+# List of dictionaries containing team member information
 team_tyrosine = [
     {
         "name": "Chelsea U",
@@ -25,8 +44,5 @@ team_tyrosine = [
     }
 ]
 
-for member in team_tyrosine:
-    print(
-        f"Name: {member['name']}, Username: {member['slack_username']}, Country: {member['country']}, "
-        f"Hobby: {member['hobby']}, Affiliation: {member['affiliation']}, Favourite gene: {member['fave_gene']}"
-    )
+# Call the function to print all members' info
+display_team_info(team_tyrosine)
